@@ -1,0 +1,311 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 1px 1px 1px rgb(226, 223, 223);
+    font-family: Roboto;
+}
+header .left-section {
+    display: flex;
+    align-items: center;
+}
+
+header .left-section img {
+    height: 50px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+select {
+    display: none;
+}
+
+header ul li svg {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header ul li span {
+    position: relative;
+    display: flex;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+}
+
+header .search-product input {
+    padding: 9px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid rgb(209, 205, 205);
+    outline: none;
+    width: 300px;
+}
+
+header .search-product button {
+    padding: 9px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid rgb(209, 205, 205);
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+header .login-erea {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header  i {
+    display: none;
+}
+
+header .login-area button {
+    border: 1px solid rgb(209, 205, 205);
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header .login-area button:hover {
+    opacity: 0.8;
+}
+
+header .login-area button:active {
+    opacity: 0.5;
+}
+
+@media (max-width: 1320px) {
+
+        header .login-area button {
+        padding: 12px;
+        margin-right: 4px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    header .left-section {
+        font-size: 0.7em;
+     }
+
+     header .left-section img{
+        height: 40px;
+    }
+
+    header .search-product input {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    header ul li {
+        font-size: .8em;
+    }
+
+    header .left-section img{
+        height: 37px;
+    }
+
+    header .login-area button {
+        padding: 11px;
+    }
+}
+
+@media (max-width: 1100px) {
+    
+    header .left-section {
+        font-size: 0.7em;
+     }
+
+     header .left-section img{
+        height: 38px;
+    }
+
+    header ul li {
+        font-size: .8em;
+    }
+
+    header .search-product input {
+        width: 220px;
+    }
+
+    header .login-area button {
+        padding: 10px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 1150px) {
+ 
+    header .search-product input {
+        width: 150px;
+    }
+
+    header .login-area button {
+        padding: 8px;
+        margin-right: 5px;
+    }
+
+    header input::placeholder {
+        font-size: 0.9em;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    header .left-section {
+        font-size: 0.6em;
+     }
+
+     header .left-section img{
+        height: 35px;
+    }
+
+    header ul li {
+        display: none;
+    }
+
+    select {
+        display: flex;
+        padding: 8px;
+        border: 1px solid whitesmoke;
+        font-family: Roboto;
+    }
+
+    header .search-product input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+ 
+    header .left-section {
+       font-size: 0.7em;
+    }
+
+    header .left-section img{
+        height: 30px;
+    }
+
+    header ul li {
+        display: none;
+    }
+
+    header  .login-area i {
+        display: flex;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    select {
+        display: flex;
+        padding: 8px;
+        border: 1px solid whitesmoke;
+        font-family: Roboto;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+    header {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    }
+
+    header .left-section {
+        font-size: 0.5em;
+     }
+ 
+     header .left-section img{
+         height: 30px;
+     }
+
+    header  .login-area button {
+        display: none;
+    }
+
+    header   i {
+        display: flex;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    header .search-product input {
+        width: 150px;
+    }
+
+    header input::placeholder {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 600px) {
+    header .search-product input {
+        width: 100px;
+    }
+
+    header input::placeholder {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header ul {
+        padding: 0;
+    }
+
+    select{
+        padding: 2px;
+    }
+    header .search-product input {
+        width: 50px;
+    }
+
+    header input::placeholder {
+        font-size: 0.6em;
+    }
+
+    header .search-product input {
+        padding: 5px;
+    }
+
+    header .search-product button {
+        padding: 5px;
+    }
+}

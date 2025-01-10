@@ -1,0 +1,153 @@
+
+nav {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    border-top: 1px solid rgb(196, 194, 194);
+}
+
+nav ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav i {
+    font-size: 1.5em;
+}
+
+nav i:active {
+    opacity: 0.5;
+}
+
+.sideBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    padding-left: 5px;
+    padding: 15px;
+    font-family: Roboto;
+}
+
+.sideBar li {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sideBar .icon {
+    display: flex;
+    justify-content: end;
+}
+
+.showSideBar {
+    display: none;
+    margin: 0;
+}
+
+.sideBar a {
+    width: 100%;
+}
+
+.show-icon {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.hide-icon {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+@media (max-width: 1300px) {
+    nav{
+        position: fixed;
+        top: 75px;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    nav{
+        position: fixed;
+        top: 69px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    nav{
+        font-size: .9em;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    nav{
+        font-size: .9em;
+        padding: 5px;
+    }
+
+    nav .hideToMobile{
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-top: 10px;
+    }
+
+    .sideBar {
+        display: block;
+    }
+
+    nav ul .showSideBar {
+        display: flex;
+    }
+
+    .open {
+        display: flex;
+    }
+
+    .close {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding-bottom: 5px;
+        position: fixed;
+        top: 55px;
+
+    }
+
+
+}
